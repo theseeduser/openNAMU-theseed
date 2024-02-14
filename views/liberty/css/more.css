@@ -1,0 +1,208 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* 목차 */
+#toc, .opennamu_TOC {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 18px 20px 20px 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#toc-name, .opennamu_TOC_title {
+    font-size: 1.25rem;
+
+    display: block;
+
+    width: calc(100% + 40px);
+    
+    margin-left: -8px;
+    margin-top: -10px;
+    margin-bottom: -40px;
+
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+/* 문단 */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.2em 0 0.6em;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* 수평선 */
+hr {
+	margin: 1rem 0;
+    border-color: #ccc;
+}
+
+/* 링크 */
+.opennamu_link_out, .opennamu_link_inter {
+    color: #090;
+}
+
+/* 리스트 */ 
+.opennamu_ul {
+    padding-left: 0.7rem;
+}
+
+li {
+    margin: 0.4em 0 0.4em 1em;
+}
+
+/* 인용문 */
+blockquote {
+	background: #eee;
+	border: 2px dashed #ccc;
+	border-left: 5px solid #71bc6d;
+	display: table;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+/* 분류, 넘겨주기 알림 */
+#cate, .opennamu_category {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 4px 4px 4px 6px;
+    display: inline-block;
+    width: 100%;
+}
+
+#redirect {
+    background-color: #d9edf7;
+    border: 1px solid #bcdff1;
+    border-radius: 0.25rem;
+    color: #31708f;
+    font-size: .9rem;
+    margin-bottom: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+    width: 100%;
+}
+
+/* 토론 디자인 */
+.opennamu_comment {
+	max-width: 100%;
+    min-width: 400px;
+	width: auto;
+	word-wrap: break-word;
+	position: relative;
+}
+
+.opennamu_comment_color_default, .opennamu_comment_color_green, .opennamu_comment_color_gray, .opennamu_comment_color_blue, .opennamu_comment_color_red {
+	width: 100%;
+	padding: 7px 10px;
+    border-radius: 6px 6px 0px 0px;
+	border: 1px solid #888;
+	border-bottom: none;
+	display: inline-block;
+}
+
+.opennamu_comment_color_gray {
+	border: 1px solid #888;
+}
+
+.opennamu_comment_blind_not, #opennamu_comment_data_main {
+	width: 100%;
+	padding: 13px;
+	border-radius: 0px 0px 6px 6px;
+	border: 1px solid #888;
+	border-top: none;
+	display: inline-block;
+	background: #f4f4f4;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.opennamu_comment_scroll {
+    max-height: none;
+    overflow: scroll;
+}
+
+.opennamu_comment_blind {
+	width: 100%;
+	padding: 13px;
+	border-radius: 0px 0px 6px 6px;
+	border: 1px solid #888;
+	border-top: none;
+	background: #6b6b6b;
+	color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+	.opennamu_comment {
+		min-width: 100%;
+		width: 100%;
+	}
+}
+
+/* 폰트 불러오기 */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: block;
+	src: local('Pretendard Black'), url('/views/buma/fonts/woff2/Pretendard-Black.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: block;
+	src: local('Pretendard ExtraBold'), url('/views/buma/fonts/woff2/Pretendard-ExtraBold.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: block;
+	src: local('Pretendard Bold'), url('/views/buma/fonts/woff2/Pretendard-Bold.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: block;
+	src: local('Pretendard SemiBold'), url('/views/buma/fonts/woff2/Pretendard-SemiBold.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: block;
+	src: local('Pretendard Medium'), url('/views/buma/fonts/woff2/Pretendard-Medium.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: block;
+	src: local('Pretendard Regular'), url('/views/buma/fonts/woff2/Pretendard-Regular.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: block;
+	src: local('Pretendard Light'), url('/views/buma/fonts/woff2/Pretendard-Light.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: block;
+	src: local('Pretendard ExtraLight'), url('/views/buma/fonts/woff2/Pretendard-ExtraLight.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: block;
+	src: local('Pretendard Thin'), url('/views/buma/fonts/woff2/Pretendard-Thin.woff2') format('woff2'), url('/views/buma/fonts/woff/Pretendard-Thin.woff') format('woff');
+}

@@ -1,0 +1,63 @@
+html, body {
+    background: black;
+    color: white;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+textarea, input, button, select {
+    background: #1f2023;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder, select::placeholder {
+    color: white;
+}
+
+#toc, .opennamu_TOC, #cate, #redirect {
+    background: #1f2023;
+}
+
+.opennamu_comment_color_gray {
+    background: #4a4a4a;
+}
+
+.opennamu_comment_color_green {
+    background: #2e4a2e;
+}
+
+.opennamu_comment_color_red {
+    background: #803737;
+}
+
+.opennamu_comment_color_default {
+    background: #38340e;
+}
+
+.opennamu_comment_color_blue {
+    background: #314c56;
+}
+
+#main_table_top_tr {
+    background: #2e5f4e;
+}
+
+pre#syntax, pre#syntax code {
+    background: black;
+}
+
+.hljs, .hljs-subst {
+    color: white;
+}
+
+blockquote {
+    background-color: black;
+    border-left: 5px solid #eee;
+}
+
+.spead_footnote {
+    background-color: black;
+    color: white;
+}
