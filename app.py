@@ -459,7 +459,7 @@ app.route('/edit_from/<everything:name>', defaults = { 'do_type' : 'load' })(edi
 app.route('/edit_section/<int:section>/<everything:name>', methods = ['POST', 'GET'])(edit)
 app.route('/edit_section_preview/<int:section>/<everything:name>', defaults = { 'do_type' : 'preview' }, methods = ['POST'])(edit)
 
-app.route('/upload', methods = ['POST', 'GET'])(edit_upload)
+app.route('/Upload', methods = ['POST', 'GET'])(edit_upload)
 
 # 개편 예정
 app.route('/xref_reset/<everything:name>')(edit_backlink_reset)
