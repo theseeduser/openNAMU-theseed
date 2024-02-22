@@ -196,16 +196,13 @@ def view_read(name = 'Test', doc_rev = '', doc_from = '', do_type = ''):
             curs.execute(db_change("select title from acl where title = ?"), [name])
             acl = 1 if curs.fetchall() else 0
             menu_acl = 1 if acl_check(name) == 1 else 0
-            if response_data == 404:
-                menu += [['edit/' + url_pas(name), load_lang('create'), menu_acl]] 
-            else:
-                menu += [['edit/' + url_pas(name), load_lang('edit'), menu_acl]]
 
             menu += [
+                ['xref/' + url_pas(name), load_lang('backlink')],
                 ['topic/' + url_pas(name), load_lang('discussion'), topic], 
-                ['history/' + url_pas(name), load_lang('history')], 
-                ['xref/' + url_pas(name), load_lang('backlink')], 
-                ['acl/' + url_pas(name), load_lang('setting'), acl],
+                ['edit/' + url_pas(name), load_lang('edit'), menu_acl],
+                ['history/' + url_pas(name), load_lang('history')],  
+                ['acl/' + url_pas(name), load_lang('acl'), acl],
             ]
 
             if do_type == 'from':
